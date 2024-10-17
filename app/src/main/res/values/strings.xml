@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">NiCESTART</string>
-    <string name="login">Login</string>
-    <string name="signup">Signup</string>
+    <string name="app_name" translatable="false">NICESTART</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="SIGNUP">Signup</string>
 </resources>

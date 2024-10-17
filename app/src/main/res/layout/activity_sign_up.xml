@@ -2,28 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    android:id="@+id/main"
+    tools:context=".SignUp"
+    android:background="@drawable/gradient2"
     >
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/girl"
+        android:id="@+id/man"
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl"></ImageView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.0"
-        android:background="@color/rojo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="58dp"></View>
+        android:src="@drawable/hipman"></ImageView>
 
     <ImageView
         android:id="@+id/logo"
@@ -34,9 +26,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/til1"
         ></ImageView>
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
@@ -44,7 +35,7 @@
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/til2"
         app:startIconDrawable="@drawable/usericon"
         >
 
@@ -65,7 +56,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til1"
+        app:layout_constraintBottom_toTopOf="@id/button"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/llave"
         >
@@ -83,8 +74,15 @@
 
             />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:background="@color/rojo"></View>
+
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button"
         style="@style/buttonflat"
@@ -92,7 +90,7 @@
         android:text="@string/LOGIN"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til2" />
+        app:layout_constraintTop_toTopOf="@id/til2" />
 
     <Button
         android:id="@+id/buttoninverse"
@@ -100,17 +98,16 @@
         android:layout_height="60dp"
         android:onClick="openSignup"
         android:text="@string/SIGNUP"
+        app:layout_constraintBottom_toBottomOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/button"
-
-        />
+        app:layout_constraintTop_toBottomOf="@id/button" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.20" />
+        app:layout_constraintGuide_percent="0.30" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -118,7 +115,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80" />
-
+        app:layout_constraintGuide_percent="0.70" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/buttoninverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

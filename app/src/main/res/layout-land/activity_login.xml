@@ -17,14 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/girl"></ImageView>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.0"
-        android:background="@color/rojo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="58dp"></View>
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="80dp"
@@ -84,13 +76,20 @@
 
             />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:background="@color/rojo"></View>
+
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button"
         style="@style/buttonflat"
         android:onClick="openMain"
-        android:text="@string/login"
+        android:text="@string/LOGIN"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toTopOf="@id/til2" />
@@ -100,12 +99,11 @@
         style="@style/buttonoutlined"
         android:layout_height="60dp"
         android:onClick="openSignup"
-        android:text="@string/signup"
+        android:text="@string/SIGNUP"
+        app:layout_constraintBottom_toBottomOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        app:layout_constraintBottom_toBottomOf="@id/guideline4"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
