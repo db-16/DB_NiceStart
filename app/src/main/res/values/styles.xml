@@ -24,5 +24,13 @@
         <item name="strokeColor">@color/rojo</item>
         <item name="cornerRadius">8dp</item>
     </style>
+    <style name="buttonflat2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:backgroundTint">@color/azul_cielo</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+
+    </style>
 
 </resources>

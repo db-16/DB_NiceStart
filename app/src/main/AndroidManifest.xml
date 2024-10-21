@@ -19,6 +19,12 @@
             android:theme="@style/Theme.NiceStart.ActionBar"
             />
         <activity
+            android:name=".openMain"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.NiceStart.ActionBar"
+            />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
