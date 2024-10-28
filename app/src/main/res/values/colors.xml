@@ -12,5 +12,7 @@
     <color name="morado_claro">#7630D9</color>
     <color name="azul_marino">#04588C</color>
     <color name="azul_cielo">#79F2E6</color>
+    <color name="teal_200">#FF03DAC5</color>
+
 
 </resources>

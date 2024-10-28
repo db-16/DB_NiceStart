@@ -14,8 +14,7 @@
         android:id="@+id/girl"
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <View
         android:layout_width="match_parent"

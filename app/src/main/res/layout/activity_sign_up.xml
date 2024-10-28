@@ -15,7 +15,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/hipman"></ImageView>
+        ></ImageView>
 
     <ImageView
         android:id="@+id/logo"
