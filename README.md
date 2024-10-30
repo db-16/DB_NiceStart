@@ -13,13 +13,16 @@
     <img src="https://github.com/user-attachments/assets/31180765-5320-477f-a173-9f7a5c69d08a" alt="Imagen 1" width="200" height="400" style="margin-right: 10px;">
     <img src="https://github.com/user-attachments/assets/ad3f3d46-2903-404a-a880-749866f5c592" alt="Imagen 2" width="200" height="400" style="margin-right: 10px;">
     <img src="https://github.com/user-attachments/assets/6be78668-aed2-4d8f-ba53-c3d7beec3ab7" alt="Imagen 3" height="400" width="200" style="margin-right: 10px;">
+    <img src="https://github.com/user-attachments/assets/b9a31c8d-9eb8-4d28-905f-08c67fd3fc81" alt="Imagen 4" height="400" width="200" style="margin-right: 10px;">
 </div>
 
 ## Estructura del Proyecto
 
 - **/activity_login**: Página de inicio de sesión.
 - **/activity_signup**: Página de registro de nuevos usuarios.
-- **/activity_main**: Página principal a la que accedes tras iniciar sesión o registrarte.
+- **/activity_profile**: Página del perfil.
+- **/activity_splash**: Animación del comienzo.
+
 
 ## Tecnologías Usadas
 
