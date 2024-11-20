@@ -19,7 +19,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
  * @author eramiro
  */
 
-public class MainActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Method for Login button
     public void openMain(View v) {
-        Intent intent = new Intent(MainActivity.this, Main.class);
+        Intent intent = new Intent(Login.this, Main.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Method for Signup button
     public void openSignup(View v) {
-        Intent intent = new Intent(MainActivity.this, Signup.class);
+        Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
     }
 
