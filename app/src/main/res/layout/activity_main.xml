@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/myMainConstraint"
-    >
+    android:background="@android:color/black"
+    android:id="@+id/myMainConstraint">
 
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+android:id="@+id/myswipe"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintBottom_toBottomOf="parent">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/myswipe"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+<WebView
+    android:id="@+id/vistaweb"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintWidth_percent="1.0"
+    app:layout_constraintHeight_percent="1.0"
+    android:layout_margin="0dp" />
 
-        <WebView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/vistaweb"
-            >
-        </WebView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -105,6 +105,10 @@ public class Main extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
             toast.show();
         }
+        if(id==R.id.item3){
+            Intent intent = new Intent(Main.this, openProfile.class);
+            startActivity(intent);
+        }
 
         if (id == R.id.item5) {
             showAlertDialogButtonClicked(Main.this);
