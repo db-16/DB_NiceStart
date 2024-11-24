@@ -2,7 +2,7 @@
 
 ## Descripción
 
-¡Hola! Soy Daniel y he creado un proyecto web que consta de cuatro páginas:
+¡Hola! Soy Daniel y he creado un proyecto que consta de cuatro páginas:
 
 1. **Portada animación**: Antes de entrar a la app aparece una pantalla animada con un mar de fondo, el icono del proyecto animado en una rotación y el nombre del proyecto que parpadea.
 2. **Página de Inicio de Sesión**: Aquí puedes introducir tus credenciales. Si las credenciales son correctas, serás redirigido a la página principal (main).
