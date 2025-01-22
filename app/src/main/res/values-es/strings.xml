@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NICESTART</string>
+    <string name="LOGIN">Iniciar Sesion</string>
+    <string name="SIGNUP">Registrarse</string>
+</resources>

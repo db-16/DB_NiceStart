@@ -113,11 +113,11 @@
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/til1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80" />
+        app:layout_constraintGuide_begin="329dp"
+        app:layout_constraintTop_toBottomOf="@id/til1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
