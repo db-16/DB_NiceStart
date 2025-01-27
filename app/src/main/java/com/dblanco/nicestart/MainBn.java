@@ -53,22 +53,22 @@ public class MainBn extends AppCompatActivity {
                 if (itemId == R.id.likes) {
                     item.setChecked(true);
                     Toast.makeText(MainBn.this, "Likes clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, itemId);
+               //     removeBadge(mybottomNavView, itemId);
                     viewPager1.setCurrentItem(0);
                 } else if (itemId == R.id.add) {
                     item.setChecked(true);
                     Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, itemId);
+             //       removeBadge(mybottomNavView, itemId);
                     viewPager1.setCurrentItem(1);
                 } else if (itemId == R.id.browse) {
                     item.setChecked(true);
                     Toast.makeText(MainBn.this, "Browse clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, itemId);
+          //          removeBadge(mybottomNavView, itemId);
                     viewPager1.setCurrentItem(2);
                 } else if (itemId == R.id.personal) {
                     item.setChecked(true);
                     Toast.makeText(MainBn.this, "Personal clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, itemId);
+             //       removeBadge(mybottomNavView, itemId);
                     viewPager1.setCurrentItem(3);
                 }
 
@@ -88,7 +88,7 @@ public class MainBn extends AppCompatActivity {
                     prevMenuItem.setChecked(false);
                 }
                 mybottomNavView.getMenu().getItem(position).setChecked(true);
-                removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
+          //      removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
             }
 
             @Override
@@ -103,10 +103,10 @@ public class MainBn extends AppCompatActivity {
      * @param bottomNavigationView la vista de navegación inferior
      * @param itemId               el ID del elemento del menú
      */
-    public static void removeBadge(BottomNavigationView bottomNavigationView, @IdRes int itemId) {
-        @SuppressLint("RestrictedApi") BottomNavigationItemView itemView = bottomNavigationView.findViewById(itemId);
-        if (itemView != null && itemView.getChildCount() == 3) {
-            itemView.removeViewAt(2);
-        }
-    }
+    //public static void removeBadge(BottomNavigationView bottomNavigationView, @IdRes int itemId) {
+      //  @SuppressLint("RestrictedApi") BottomNavigationItemView itemView = bottomNavigationView.findViewById(itemId);
+       // if (itemView != null && itemView.getChildCount() == 3) {
+         //   itemView.removeViewAt(2);
+        //}
+    //}
 }
