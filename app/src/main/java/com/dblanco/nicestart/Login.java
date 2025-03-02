@@ -61,7 +61,7 @@ public class Login extends AppCompatActivity {
 
     // Method for Login button
     public void openMain(View v) {
-        Intent intent = new Intent(Login.this, Main.class);
+        Intent intent = new Intent(Login.this, MainBn.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
@@ -70,7 +70,7 @@ public class Login extends AppCompatActivity {
 
     // Method for Signup button
     public void openSignup(View v) {
-        Intent intent = new Intent(Login.this, MainBab.class);
+        Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
     }
 

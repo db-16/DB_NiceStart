@@ -40,7 +40,7 @@ public class Signup extends AppCompatActivity {
 
     // Method for Signup button
     public void openMain(View v) {
-        Intent intent = new Intent(Signup.this, Main.class);
+        Intent intent = new Intent(Signup.this, MainBn.class);
         startActivity(intent);
     }
 
