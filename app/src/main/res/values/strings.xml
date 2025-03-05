@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name" translatable="false">NICESTART</string>
+    <string name="app_name">NICESTART</string>
     <string name="LOGIN">LOGIN</string>
     <string name="SIGNUP">Signup</string>
+    <string name="USERNAME">Username</string>
+    <string name="PASSWORD">Password</string>
+
 </resources>

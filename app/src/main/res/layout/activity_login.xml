@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Username"
+            android:hint="@string/USERNAME"
             ></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Password"
+            android:hint="@string/PASSWORD"
             android:inputType="textPassword"
             android:maxLines="1"
 

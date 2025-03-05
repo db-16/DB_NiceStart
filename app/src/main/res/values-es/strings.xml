@@ -3,4 +3,6 @@
     <string name="app_name">NICESTART</string>
     <string name="LOGIN">Iniciar Sesion</string>
     <string name="SIGNUP">Registrarse</string>
+    <string name="USERNAME">Nombre de usuario</string>
+    <string name="PASSWORD">Contraseña</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colores para el modo claro -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="naranja">#E8920C</color>
@@ -15,6 +16,19 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="fucsia_700">#4D0A20</color>
 
-
-
+    <!-- Colores para el modo oscuro -->
+    <color name="black_dark">#121212</color> <!-- Fondo oscuro -->
+    <color name="white_dark">#E1E1E1</color> <!-- Texto en modo oscuro -->
+    <color name="naranja_dark">#D67C1F</color> <!-- Naranja más oscuro -->
+    <color name="verde_bosque_dark">#128B1F</color> <!-- Verde bosque más oscuro -->
+    <color name="lima_dark">#8ACC00</color> <!-- Lima más oscuro -->
+    <color name="rojo_dark">#B20000</color> <!-- Rojo más oscuro -->
+    <color name="amarillo_dark">#B08A00</color> <!-- Amarillo más oscuro -->
+    <color name="lila_dark">#D140D0</color> <!-- Lila más oscuro -->
+    <color name="morado_oscuro_dark">#3F124D</color> <!-- Morado oscuro más oscuro -->
+    <color name="morado_claro_dark">#5025B1</color> <!-- Morado claro más oscuro -->
+    <color name="azul_marino_dark">#03375A</color> <!-- Azul marino más oscuro -->
+    <color name="azul_cielo_dark">#5BD9CE</color> <!-- Azul cielo más oscuro -->
+    <color name="teal_200_dark">#B2FFFB</color> <!-- Teal más oscuro -->
+    <color name="fucsia_700_dark">#340817</color> <!-- Fucsia más oscuro -->
 </resources>

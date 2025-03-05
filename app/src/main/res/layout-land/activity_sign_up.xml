@@ -5,145 +5,149 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp"
+    tools:context=".Signup"
     android:background="@drawable/gradient2"
     >
+
+    <!-- Imagen de fondo ajustada para un tamaño más pequeño -->
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/man"
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/hipman"></ImageView>
+        android:src="@drawable/hipman"
+        android:layout_marginBottom="50dp"/>
 
+    <!-- Logo más pequeño y ajustado -->
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_action_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/til1"
-        ></ImageView>
+        android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/ic_action_name"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/til1"
+    />
+
+    <!-- Campo de texto de Usuario reducido -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintBottom_toTopOf="@id/til2"
-        >
+        android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    app:layout_constraintEnd_toEndOf="@id/guideline3"
+    app:layout_constraintStart_toStartOf="@id/guideline2"
+    app:layout_constraintTop_toBottomOf="@id/logo"
+    app:layout_constraintBottom_toTopOf="@id/til2"
+    >
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.6"
-            android:background="@color/white"
-            android:hint="Username"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:background="@color/white"
+        android:hint="Username" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de texto de Contraseña reducido -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/til2"
+android:layout_width="0dp"
+android:layout_height="50dp"
+    app:layout_constraintEnd_toEndOf="@id/guideline3"
+    app:layout_constraintStart_toStartOf="@id/guideline2"
+    app:layout_constraintTop_toBottomOf="@id/til1"
+    app:layout_constraintBottom_toTopOf="@id/til3"
+    app:passwordToggleEnabled="false"
+    >
+
+<EditText
+android:id="@+id/password"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:alpha="0.6"
+android:background="@color/white"
+android:hint="Password"
+android:inputType="textPassword"
+android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Campo de texto Repetir Contraseña reducido -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/til3"
+android:layout_width="0dp"
+android:layout_height="50dp"
+    app:layout_constraintEnd_toEndOf="@id/guideline3"
+    app:layout_constraintStart_toStartOf="@id/guideline2"
+    app:layout_constraintTop_toBottomOf="@id/til2"
+    app:layout_constraintBottom_toTopOf="@id/button"
+    >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til2"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til1"
-        app:layout_constraintBottom_toTopOf="@id/til3"
-        app:passwordToggleEnabled="false"
-        >
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.6"
-            android:background="@color/white"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:maxLines="1"
-
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til3"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til2"
-        app:layout_constraintBottom_toTopOf="@id/button"
-        >
-
-        <EditText
-            android:id="@+id/repytepassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.6"
-            android:background="@color/white"
-            android:hint="Repyte Password"
-            android:inputType="textPassword"
-            android:maxLines="1"
-
-
-            />
-
+<EditText
+android:id="@+id/repytepassword"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:alpha="0.6"
+android:background="@color/white"
+android:hint="Repyte Password"
+android:inputType="textPassword"
+android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Botón Sign Up ajustado -->
+<Button
+android:id="@+id/button"
+style="@style/buttonflat2"
+android:onClick="openMain"
+android:text="SIGNUP"
+app:layout_constraintEnd_toEndOf="@id/guideline3"
+app:layout_constraintStart_toStartOf="@id/guideline2"
+app:layout_constraintTop_toBottomOf="@id/til3"
+app:layout_constraintBottom_toTopOf="@id/buttoninverse"
+android:layout_height="50dp"
+    />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/buttonflat2"
-        android:onClick="openMain"
-        android:text="SIGNUP"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til3"
-        app:layout_constraintBottom_toTopOf="@id/buttoninverse"/>
+    <!-- Botón Cancelar ajustado -->
+<Button
+android:id="@+id/buttoninverse"
+style="@style/buttonoutlined"
+android:layout_height="50dp"
+    android:onClick="openSignup"
+    android:text="CANCEL"
+    app:layout_constraintEnd_toEndOf="@id/guideline3"
+    app:layout_constraintStart_toStartOf="@id/guideline2"
+    app:layout_constraintTop_toBottomOf="@id/button"
+    app:layout_constraintBottom_toTopOf="@id/guideline4"
+    />
 
-    <Button
-        android:id="@+id/buttoninverse"
-        style="@style/buttonoutlined"
-        android:layout_height="60dp"
-        android:onClick="openSignup"
-        android:text="CANCEL"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        app:layout_constraintBottom_toTopOf="@id/guideline4"
+    <!-- Líneas Guías para la disposición -->
+<androidx.constraintlayout.widget.Guideline
+android:id="@+id/guideline2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+app:layout_constraintGuide_percent="0.30" />
 
-        />
+<androidx.constraintlayout.widget.Guideline
+android:id="@+id/guideline3"
+app:layout_constraintTop_toBottomOf="@id/til1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+app:layout_constraintGuide_percent="0.70" />
 
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.30" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/til1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.70" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@id/buttoninverse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.90" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.Guideline
+android:id="@+id/guideline4"
+app:layout_constraintTop_toBottomOf="@id/buttoninverse"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+app:layout_constraintGuide_percent="0.90" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

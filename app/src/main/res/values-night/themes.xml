@@ -1,7 +1,33 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme for dark mode -->
     <style name="Base.Theme.NiceStart" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Colores del modo oscuro -->
+        <item name="colorPrimary">@color/morado_oscuro_dark</item>
+        <item name="colorPrimaryVariant">@color/morado_claro_dark</item>
+        <item name="colorOnPrimary">@color/white_dark</item>
+
+        <item name="colorSecondary">@color/teal_200_dark</item>
+        <item name="colorSecondaryVariant">@color/teal_200_dark</item>
+        <item name="colorOnSecondary">@color/white_dark</item>
+
+        <!-- Fondo del modo oscuro -->
+        <item name="android:windowBackground">@color/black_dark</item> <!-- Fondo oscuro -->
+
+        <!-- Superficies y textos -->
+        <item name="colorSurface">@color/black_dark</item> <!-- Superficie en modo oscuro -->
+        <item name="colorOnSurface">@color/white_dark</item> <!-- Texto sobre la superficie en modo oscuro -->
+        <item name="colorError">@color/rojo_dark</item> <!-- Color de error en modo oscuro -->
+        <item name="colorOnError">@color/white_dark</item> <!-- Texto sobre error -->
+
+        <!-- Textos en modo oscuro -->
+
+
+        <!-- Esquema de tonalidades -->
+        <item name="android:statusBarColor">@color/morado_oscuro_dark</item>
+        <item name="android:navigationBarColor">@color/morado_oscuro_dark</item>
+
+        <!-- Colores de fondo y texto de superficies variantes -->
+        <item name="colorSurfaceVariant">@color/morado_oscuro_dark</item>
+        <item name="colorOnSurfaceVariant">@color/white_dark</item>
     </style>
 </resources>
