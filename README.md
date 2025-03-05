@@ -33,7 +33,7 @@
 - **/activity_profile**: Página del perfil.
 - **/activity_splash**: Animación del comienzo.
 - **/activity_main**: Página principal.
-- **/activity_main_bab**:Un menu bajo que consta de dos botones, uno del menu y un boton +
+- **/activity_main_bab**:Un menu en la parte inferior de la pantalla que tiene un boton flotante y menu de items
 - **/activity_main_bn**:Menu de items al que podemos acceder a acda uno deslizando
 
 ## Tecnologías Usadas
